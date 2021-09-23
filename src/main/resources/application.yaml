@@ -1,0 +1,23 @@
+# error reporting
+server:
+  error:
+    include-message: always
+
+# debug logging
+logging:
+  level:
+    eu.kryl.ataccama: DEBUG
+
+# swagger documentation
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
+    operationsSorter: alpha
+    tags-sorter: alpha
+  writer-with-order-by-keys: true
+
+app:
+  baseUrl: http://localhost:8080
